@@ -552,6 +552,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		008751B221842422002BE254 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		008751B521842422002BE254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DBA16351B4FA408937A16CE /* LOTAnimationView_Compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTAnimationView_Compat.h; sourceTree = "<group>"; };
 		48183C9A1E54E20B0039F121 /* CGGeometry+LOTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+LOTAdditions.h"; sourceTree = "<group>"; };
 		48183C9B1E54E20B0039F121 /* CGGeometry+LOTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+LOTAdditions.m"; sourceTree = "<group>"; };
@@ -690,6 +692,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		008751AF21842422002BE254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62CA59B41E3C173B002D7188 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -728,6 +737,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		008751B321842422002BE254 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				008751B521842422002BE254 /* Info.plist */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 		481A4A171E4A7885003CF62B /* AnimatableLayers */ = {
 			isa = PBXGroup;
 			children = (
@@ -935,6 +952,7 @@
 			isa = PBXGroup;
 			children = (
 				62CA59BA1E3C173B002D7188 /* Lottie */,
+				008751B321842422002BE254 /* Lottie */,
 				62CA59B91E3C173B002D7188 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -947,6 +965,7 @@
 				84FE12EF1E4C1485009B157C /* libLottie.a */,
 				8C5379761FB471D100C1BC65 /* Lottie.framework */,
 				6445B0D5207E0D4D00D84F6A /* libLottie.a */,
+				008751B221842422002BE254 /* Lottie.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -991,6 +1010,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		008751AD21842422002BE254 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62CA59B51E3C173B002D7188 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1207,6 +1233,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		008751B121842422002BE254 /* Lottie_watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 008751B921842422002BE254 /* Build configuration list for PBXNativeTarget "Lottie_watchOS" */;
+			buildPhases = (
+				008751AD21842422002BE254 /* Headers */,
+				008751AE21842422002BE254 /* Sources */,
+				008751AF21842422002BE254 /* Frameworks */,
+				008751B021842422002BE254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lottie_watchOS;
+			productName = Lottie;
+			productReference = 008751B221842422002BE254 /* Lottie.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		62CA59B71E3C173B002D7188 /* Lottie_iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62CA59C01E3C173B002D7188 /* Build configuration list for PBXNativeTarget "Lottie_iOS" */;
@@ -1304,6 +1348,10 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Airbnb;
 				TargetAttributes = {
+					008751B121842422002BE254 = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+					};
 					62CA59B71E3C173B002D7188 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -1333,6 +1381,7 @@
 				62CA59B71E3C173B002D7188 /* Lottie_iOS */,
 				FAE1F79C1E428CBE002E0974 /* Lottie_macOS */,
 				8C5378FE1FB471D100C1BC65 /* Lottie_tvOS */,
+				008751B121842422002BE254 /* Lottie_watchOS */,
 				84FE12EE1E4C1485009B157C /* LottieLibraryIOS */,
 				6445B088207E0D4D00D84F6A /* LottieLibraryMacOS */,
 			);
@@ -1340,6 +1389,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		008751B021842422002BE254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62CA59B61E3C173B002D7188 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1364,6 +1420,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		008751AE21842422002BE254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62CA59B31E3C173B002D7188 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1683,6 +1746,72 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		008751B721842422002BE254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Lottie/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airbnb.Lottie;
+				PRODUCT_NAME = Lottie;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		008751B821842422002BE254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Lottie/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.airbnb.Lottie;
+				PRODUCT_NAME = Lottie;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
 		62CA59BE1E3C173B002D7188 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1972,6 +2101,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		008751B921842422002BE254 /* Build configuration list for PBXNativeTarget "Lottie_watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008751B721842422002BE254 /* Debug */,
+				008751B821842422002BE254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		62CA59B21E3C173B002D7188 /* Build configuration list for PBXProject "Lottie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

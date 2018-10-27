@@ -25,6 +25,7 @@ For the first time, designers can create and ship beautiful animations without a
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
   s.tvos.deployment_target = '9.0'
+  s.watchos.deployment_target = '5.0'
 
   s.source_files = 'lottie-ios/Classes/**/*'
   s.osx.exclude_files = ['lottie-ios/Classes/PublicHeaders/LOTAnimationTransitionController.h',
@@ -42,6 +43,7 @@ For the first time, designers can create and ship beautiful animations without a
   s.public_header_files = 'lottie-ios/Classes/PublicHeaders/*.h'
   s.ios.frameworks = 'UIKit'
   s.osx.frameworks = ['AppKit', 'CoreVideo']
+  s.watchos.frameworks = 'UIKit'
   s.module_name = 'Lottie'
   s.header_dir = 'Lottie'
 end
